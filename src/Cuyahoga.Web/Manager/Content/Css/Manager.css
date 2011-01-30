@@ -1,0 +1,155 @@
+@import "reset.css";
+@import "manager.tags.css";
+@import "manager.menu.css";
+@import "manager.taskarea.css";
+@import "manager.actionbuttons.css";
+@import "manager.pagegrid.css";
+@import "manager.tablegrid.css";
+@import "manager.contentediting.css";
+@import "manager.pager.css";
+@import "manager.templates.css";
+
+html *
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    font-size: small;
+}
+
+body.dialog
+{
+	background-color: #fff;
+}
+
+#header
+{
+	background-color: #eef;
+	height: 60px;
+	min-width: 980px;
+}
+
+#header p
+{
+	margin: 0 0 0 180px;
+	font-weight: bold;
+	padding-top: 17px;
+	
+}
+
+#header img
+{
+	float: left;
+}
+
+#sitechooser
+{
+	position: absolute;
+	top: 10px;
+	left: 450px;
+}
+
+#userinfo
+{
+	margin-top: 10px;
+	float: right;
+	width: 200px;
+}
+
+#contentcontainer
+{
+    position: relative;
+	min-width: 980px;
+	margin: 4px;
+	clear: both;
+}
+
+#contentarea
+{
+	min-height: 600px;
+	position: relative;
+	padding: 8px;
+	margin: 8px 4px 0 4px;
+	background-color: #fff;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-right: 8px solid #ccc;
+	/*overflow: auto;*/
+	overflow: hidden;
+}
+
+#subcontentarea
+{	
+    min-height: 600px;
+    position: relative;
+	width: 240px;
+	float: right;
+	padding: 1px;
+	margin: 0 4px 0 4px;
+	/*for draggable items*/
+	overflow: visible;
+	z-index: 100;
+}
+
+#messagewrapper
+{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1000;
+}
+
+.messagebox
+{
+	color: #060;
+	margin: 0px;
+	padding: 10px 10px 10px 30px;
+	border: 1px solid #396;
+	background: #cfc url(../Images/information.png) no-repeat 8px 11px;
+}
+
+.errorbox
+{
+	color: #c00;
+	margin: 0px;
+	padding: 10px 10px 10px 30px;
+	border: 1px solid #c00;
+	background: #fcc url(../Images/exclamation.png) no-repeat 8px 11px;
+}
+
+.errorbox ul
+{
+	margin: 7px 0 0 0;
+}
+
+.exceptionbox
+{
+	color: #c00;
+	margin: 10px;
+	padding: 10px 10px 10px 30px;
+	border: 1px solid #c00;
+	background: #fcc url(../Images/exclamation.png) no-repeat 8px 11px;
+}
+
+.validation-summary-errors
+{
+	color: #f00;
+}
+
+#availablemodules
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Drag & drop */
+.drophover
+{
+	border: 3px dashed #999;
+	color: #333;
+	cursor: pointer;
+}

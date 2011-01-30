@@ -1,0 +1,128 @@
+﻿/* Page grid */
+#pagegrid span.no-children
+{
+	padding: 11px;
+}
+
+#pagegrid img.children-hidden, #pagegrid img.children-visible
+{
+	padding: 0;
+	cursor: pointer;
+}
+
+
+#pagegrid .selected
+{
+	background-color: #eef;
+}
+
+#pagegrid-body
+{
+	margin-left: -20px;
+}
+
+ul.pagegroup
+{
+	margin: 0;
+	list-style: none;
+	padding: 0 0 0 20px;
+}
+
+.pageplaceholder
+{
+	border: 2px dashed #666;
+	height: 3px;
+}
+
+.droppablepage
+{
+	background-color: #69c;
+	color: #fff;
+}
+
+#pagegrid .pagerow /* grid row */
+{
+	border-bottom: 1px solid #eee;
+	width: 100%;
+	clear: left;
+}
+
+.pagegroup .pagerow:hover
+{
+	background-color: #ffc;
+}
+
+.pagegroup .ui-sortable .pagetitle:hover
+{
+	cursor: move;
+}
+
+#pagegrid .pagerow div
+{
+	border: none;
+	padding: 2px 0;
+}
+
+#pagegrid .page, #pagegrid .link
+{
+	float: left;
+	white-space: nowrap;
+	margin-top: 3px;
+}
+
+#pagegrid .pageinfo
+{
+	margin-left: 44px;
+}
+
+#pagegrid .pagetitle
+{
+	font-weight: bold;
+}
+
+#pagegrid .pageurl
+{
+	padding: 1px 3px;
+	color: #369;
+}
+
+#pagegrid .pagesub
+{
+	font-size: 90%;
+	color: #777;
+}
+
+#pagegrid .pagesub span
+{
+	margin-right: 6px;
+}
+
+#pagegrid .pagecommands
+{
+	float: right;
+	display: none;
+	margin-top: 3px;
+}
+
+#pagegrid a
+{
+	display: block;
+	float: right;
+	padding: 0 10px 0 20px;	
+	background-repeat: no-repeat;
+}
+
+#pagegrid a.designlink
+{
+	background-image: url(../Images/layout_edit.png);
+}
+
+#pagegrid a.contentlink
+{
+	background-image: url(../Images/pencil.png);
+}
+
+#pagegrid a.gotopagelink
+{
+	background-image: url(../Images/page_go.png);
+}
